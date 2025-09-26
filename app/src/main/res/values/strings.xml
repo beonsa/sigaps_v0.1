@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SIGAPS</string>
+    <string name="logo">logo</string>
+    <string name="bienvenue">Bienvenue !</string>
+    <string name="email_ou_nom_d_utilisateur">Email ou Nom d\'utilisateur</string>
+    <string name="mot_de_passe">Mot de passe</string>
+    <string name="se_connecter">Se connecter</string>
+    <string name="mot_de_passe_oubli">Mot de passe oublié ?</string>
+    <string name="cr_er_un_compte">Créer un compte</string>
+    <string name="page_de_profil_utilisateur">Page de profil utilisateur</string>
+    <string name="profil">Profil</string>
+    <string name="title_dashboard">Tableau de bord</string>
+</resources>

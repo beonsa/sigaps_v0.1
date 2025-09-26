@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/ic_dashboard"
+        android:title="@string/title_dashboard" />
+
+    <item
+        android:id="@+id/navigation_collecte"
+        android:icon="@drawable/ic_menu_collecte"
+        android:title="Collecte" />
+
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/ic_menu_profile"
+        android:title="Profil" />
+
+    <item
+        android:id="@+id/navigation_settings"
+        android:icon="@drawable/ic_menu_settings"
+        android:title="Paramètres" />
+</menu>
