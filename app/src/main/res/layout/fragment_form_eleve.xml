@@ -12,6 +12,7 @@
         android:orientation="vertical"
         android:padding="64dp">
 
+        <!-- Nom de l'élève -->
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/til_nom_eleve"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -27,6 +28,7 @@
                 android:inputType="textPersonName" />
         </com.google.android.material.textfield.TextInputLayout>
 
+        <!-- Prénom de l'élève -->
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/til_prenom_eleve"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -42,6 +44,7 @@
                 android:inputType="textPersonName" />
         </com.google.android.material.textfield.TextInputLayout>
 
+        <!-- Date de naissance -->
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/til_date_naissance_eleve"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -58,6 +61,7 @@
                 android:inputType="date" />
         </com.google.android.material.textfield.TextInputLayout>
 
+        <!-- Genre -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -85,6 +89,7 @@
                 android:text="Féminin" />
         </RadioGroup>
 
+        <!-- Classe -->
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/til_classe_eleve"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
@@ -100,6 +105,7 @@
                 android:inputType="none" />
         </com.google.android.material.textfield.TextInputLayout>
 
+        <!-- École -->
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/til_ecole_id_eleve"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
@@ -115,6 +121,119 @@
                 android:inputType="none" />
         </com.google.android.material.textfield.TextInputLayout>
 
+        <!-- Champs supplémentaires sur une ligne : CIE, NISU, Mode de déplacement -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp"
+            android:weightSum="3">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_cie"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="4dp"
+                android:hint="CIE">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_cie"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_nisu"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="4dp"
+                android:hint="NISU">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_nisu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_mode_deplacement"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Mode de déplacement">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_mode_deplacement"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <!-- Champs sur une ligne : Département et Commune de Naissance -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp"
+            android:weightSum="2">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_departement_naissance"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="4dp"
+                android:hint="Département de Naissance">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_departement_naissance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_commune_naissance"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Commune de Naissance">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_commune_naissance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <!-- Adresse complète -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_adresse_complete"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="Adresse complète">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_adresse_complete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPostalAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Bouton Enregistrer -->
         <Button
             android:id="@+id/btn_save_eleve"
             android:layout_width="match_parent"

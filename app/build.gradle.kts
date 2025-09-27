@@ -16,6 +16,8 @@ android {
         versionCode = 1
         versionName = "1.0"
 
+        vectorDrawables.useSupportLibrary = true
+
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -87,6 +89,10 @@ dependencies {
 
     // Preferences (pour sauvegarder l'état de connexion)
     implementation("androidx.preference:preference-ktx:1.2.1")
+
+    implementation("androidx.cardview:cardview:1.0.0")
+
+    implementation("com.github.PhilJay:MPAndroidChart:v3.1.0")
 
     // Tests
     testImplementation("junit:junit:4.13.2")

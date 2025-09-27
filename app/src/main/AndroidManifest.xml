@@ -12,42 +12,33 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SIGAPS"
         tools:targetApi="31">
+
+        <!-- Activité de lancement principale -->
         <activity
             android:name=".SplashActivity"
-            android:exported="true"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".SettingsFragment"
-            android:exported="false" />
-        <activity
-            android:name=".ProfileFragment"
-            android:exported="false" />
-        <activity
-            android:name=".CollecteFragment"
-            android:exported="false" />
-        <activity
-            android:name=".DashboardFragment"
-            android:exported="false" />
-        <activity
-            android:name=".AuthenticationActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- Autres activités de votre application -->
+        <activity
+            android:name=".AuthenticationActivity"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="false" />
-    </application>
+        <activity
+            android:name=".DashboardActivity"
+            android:exported="false">
+        </activity>
 
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+</application>
 
-</manifest>
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"
+    tools:ignore="ManifestOrder" />
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    </manifest>

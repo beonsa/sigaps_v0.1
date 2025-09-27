@@ -10,8 +10,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="16dp">
+        android:padding="64dp">
 
+        <!-- Nom de l'école -->
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/til_nom_ecole"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -27,6 +28,127 @@
                 android:inputType="textCapWords" />
         </com.google.android.material.textfield.TextInputLayout>
 
+        <!-- Code école et Secteur sur une ligne -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp"
+            android:weightSum="2">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_code_ecole"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="4dp"
+                android:hint="Code École">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_code_ecole"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_secteur_ecole"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Secteur">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_secteur_ecole"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <!-- Département et Commune sur une ligne -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp"
+            android:weightSum="2">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_departement_ecole"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="4dp"
+                android:hint="Département">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_departement_ecole"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_commune_ecole"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Commune">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_commune_ecole"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <!-- Sigle et Catégorie sur une ligne -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp"
+            android:weightSum="2">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_sigle_ecole"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="4dp"
+                android:hint="Sigle">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_sigle_ecole"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapCharacters" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_categorie_ecole"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Catégorie">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_categorie_ecole"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <!-- Adresse de l'école -->
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/til_adresse_ecole"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -42,6 +164,7 @@
                 android:inputType="textPostalAddress" />
         </com.google.android.material.textfield.TextInputLayout>
 
+        <!-- Ville -->
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/til_ville_ecole"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -57,6 +180,7 @@
                 android:inputType="textCapWords" />
         </com.google.android.material.textfield.TextInputLayout>
 
+        <!-- Téléphone -->
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/til_telephone_ecole"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -72,6 +196,7 @@
                 android:inputType="phone" />
         </com.google.android.material.textfield.TextInputLayout>
 
+        <!-- Email -->
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/til_email_ecole"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -87,6 +212,7 @@
                 android:inputType="textEmailAddress" />
         </com.google.android.material.textfield.TextInputLayout>
 
+        <!-- Bouton Géolocaliser -->
         <Button
             android:id="@+id/btn_get_location_ecole"
             android:layout_width="match_parent"
@@ -94,6 +220,7 @@
             android:text="Géolocaliser l'école"
             android:layout_marginBottom="8dp"/>
 
+        <!-- Affichage de la localisation -->
         <TextView
             android:id="@+id/tv_location_ecole"
             android:layout_width="match_parent"
@@ -102,6 +229,7 @@
             android:layout_marginBottom="16dp"
             android:textSize="16sp"/>
 
+        <!-- Bouton Enregistrer -->
         <Button
             android:id="@+id/btn_save_ecole"
             android:layout_width="match_parent"

@@ -1,19 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
     <item
         android:id="@+id/navigation_dashboard"
         android:icon="@drawable/ic_dashboard"
-        android:title="Tableau de bord" />
+        android:title="Tableau de bord"
+        app:showAsAction="always"/>
+
     <item
         android:id="@+id/navigation_collecte"
         android:icon="@drawable/ic_menu_collecte"
-        android:title="Collecte" />
+        android:title="Collecte"
+        app:showAsAction="always"/>
+
     <item
         android:id="@+id/navigation_profile"
         android:icon="@drawable/ic_menu_profile"
-        android:title="Profil" />
+        android:title="Profil"
+        app:showAsAction="always"/>
+
     <item
         android:id="@+id/navigation_settings"
         android:icon="@drawable/ic_menu_settings"
-        android:title="Paramètres" />
+        android:title="Paramètres"
+        app:showAsAction="always"/>
 </menu>
