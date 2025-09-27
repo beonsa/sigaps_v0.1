@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
     android:padding="16dp"
+    android:background="?android:attr/windowBackground"
     tools:context=".ui.collecte.CollecteFragment">
 
     <TextView
@@ -14,26 +16,51 @@
         android:layout_height="wrap_content"
         android:text="Section Collecte de Données"
         android:textSize="24sp"
+        android:textColor="?attr/colorOnBackground"
         android:layout_marginBottom="32dp"/>
 
-    <Button
+    <!-- Bouton Élève -->
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button_collecte_eleve"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="56dp"
         android:text="Collecter Élève"
-        android:layout_marginBottom="16dp"/>
+        android:textColor="@android:color/white"
+        android:textAllCaps="false"
+        android:layout_marginBottom="16dp"
+        app:icon="@drawable/ic_person"
+        app:iconGravity="textStart"
+        app:iconPadding="12dp"
+        app:cornerRadius="12dp"
+        app:backgroundTint="?attr/colorPrimary"/>
 
-    <Button
+    <!-- Bouton École -->
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button_collecte_ecole"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="56dp"
         android:text="Collecter École"
-        android:layout_marginBottom="16dp"/>
+        android:textColor="@android:color/white"
+        android:textAllCaps="false"
+        android:layout_marginBottom="16dp"
+        app:icon="@drawable/ic_school"
+        app:iconGravity="textStart"
+        app:iconPadding="12dp"
+        app:cornerRadius="12dp"
+        app:backgroundTint="?attr/colorPrimary"/>
 
-    <Button
+    <!-- Bouton Enseignant -->
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button_collecte_enseignant"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Collecter Enseignant"/>
+        android:layout_height="56dp"
+        android:text="Collecter Enseignant"
+        android:textColor="@android:color/white"
+        android:textAllCaps="false"
+        app:icon="@drawable/ic_teacher"
+        app:iconGravity="textStart"
+        app:iconPadding="12dp"
+        app:cornerRadius="12dp"
+        app:backgroundTint="?attr/colorPrimary"/>
 
 </LinearLayout>

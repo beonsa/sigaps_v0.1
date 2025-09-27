@@ -21,4 +21,18 @@
     <!-- Couleurs pour le splash screen -->
     <color name="splash_background">#FF6200EE</color>
     <color name="splash_text">#FFFFFF</color>
+
+    <!-- Couleurs pour le dashboard -->
+    <color name="dashboard_card_purple">#6A1B9A</color>
+    <color name="dashboard_card_green">#00897B</color>
+    <color name="green_chart">#4CAF50</color>
+    <color name="yellow_chart">#FFEB3B</color>
+    <color name="red_chart">#F44336</color>
+    <color name="blue_chart">#2196F3</color>
+    <color name="green_chart_fill">#A5D6A7</color>
+    <color name="masculin_pie_chart">#FF4081</color>
+    <color name="feminin_pie_chart">#2196F3</color>
+
+    <color name="nav_item_color">#FF6200EE</color>
+
 </resources>

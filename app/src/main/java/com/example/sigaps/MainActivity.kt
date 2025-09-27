@@ -40,6 +40,11 @@ class MainActivity : AppCompatActivity() {
 
         // Associe la BottomNavigationView avec le NavController
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottom_navigation)
+
+        // Désactive la recoloration des icônes pour conserver les couleurs originales
+        bottomNavigationView.itemIconTintList = null
+
+        // Associe la navigation
         bottomNavigationView.setupWithNavController(navController)
     }
 
